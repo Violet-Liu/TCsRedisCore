@@ -1,0 +1,15 @@
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\bin\Debug\netcoreapp2.1\Yaeher.CsRedisCore.deps.json
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\bin\Debug\netcoreapp2.1\Yaeher.CsRedisCore.dll
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\bin\Debug\netcoreapp2.1\Yaeher.CsRedisCore.pdb
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\bin\Debug\netcoreapp2.1\Yaeher.Common.dll
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\bin\Debug\netcoreapp2.1\Yaeher.Core.dll
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\bin\Debug\netcoreapp2.1\Yaeher.Common.pdb
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\bin\Debug\netcoreapp2.1\Yaeher.Core.pdb
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\bin\Debug\netcoreapp2.1\Yaeher.Core.xml
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\obj\Debug\netcoreapp2.1\Yaeher.CsRedisCore.csprojAssemblyReference.cache
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\obj\Debug\netcoreapp2.1\Yaeher.CsRedisCore.csproj.CoreCompileInputs.cache
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\obj\Debug\netcoreapp2.1\Yaeher.CsRedisCore.AssemblyInfoInputs.cache
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\obj\Debug\netcoreapp2.1\Yaeher.CsRedisCore.AssemblyInfo.cs
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\obj\Debug\netcoreapp2.1\Yaeher.CsRedisCore.csproj.CopyComplete
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\obj\Debug\netcoreapp2.1\Yaeher.CsRedisCore.dll
+E:\工作\Demo\Yaeher.CsRedis\Yaeher.CsRedisCore\obj\Debug\netcoreapp2.1\Yaeher.CsRedisCore.pdb

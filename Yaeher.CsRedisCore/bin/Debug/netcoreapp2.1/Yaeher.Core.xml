@@ -1,0 +1,6344 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Yaeher.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Yaeher.AppVersionHelper">
+            <summary>
+            Central point for application version.
+            </summary>
+        </member>
+        <member name="F:Yaeher.AppVersionHelper.Version">
+            <summary>
+            Gets current version of the application.
+            It's also shown in the web page.
+            </summary>
+        </member>
+        <member name="P:Yaeher.AppVersionHelper.ReleaseDate">
+            <summary>
+            Gets release (last build) date of the application.
+            It's shown in the web page.
+            </summary>
+        </member>
+        <member name="T:Yaeher.ClinicManage.ClinicInfo">
+            <summary>
+            科室基本信息 以及科室对应标签  科室对应医生   医生对应标签 医生基本设置信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.ClinicInfo.clinicInfomation">
+            <summary>
+            科室基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.ClinicInfo.clinicDoctorReltion">
+            <summary>
+            科室与医生关系
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.ClinicInfo.clinicLableReltion">
+            <summary>
+            科室与标签关系
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.ClinicInfo.yaeherDoctorList">
+            <summary>
+            医生基本信息
+            </summary>
+        </member>
+        <member name="T:Yaeher.ClinicManage.YaeherDoctorList">
+            <summary>
+            医生基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.YaeherDoctorList.yaeherDoctor">
+            <summary>
+            医生基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.YaeherDoctorList.doctorRelation">
+            <summary>
+            医生与标签关系
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.YaeherDoctorList.doctorOnlineRecord">
+            <summary>
+            医生上下线设置状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.YaeherDoctorList.doctorFileApply">
+            <summary>
+            医生申请文件
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.YaeherDoctorList.doctorScheduling">
+            <summary>
+            医生排班
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicManage.YaeherDoctorList.serviceMoneyList">
+            <summary>
+            医生提供服务信息
+            </summary>
+        </member>
+        <member name="T:Yaeher.Common.ReqBaseSimpleIn">
+            <summary>
+            基础的请求参数
+            </summary>
+        </member>
+        <member name="P:Yaeher.Common.ReqBaseSimpleIn.Id">
+            <summary>
+            数据主键
+            </summary>
+        </member>
+        <member name="P:Yaeher.Common.ReqBaseSimpleIn.Secret">
+            <summary>
+            签名
+            </summary>
+        </member>
+        <member name="P:Yaeher.Common.ReqBaseSimpleIn.query">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="T:Yaeher.Common.Req_ConfigureKeywordSet">
+            <summary>
+            关键词设置请求参数
+            </summary>
+        </member>
+        <member name="P:Yaeher.Common.Req_ConfigureKeywordSet.Status">
+            <summary>
+            是否上下线
+            </summary>
+        </member>
+        <member name="T:Yaeher.ConsultationEvaluation">
+            <summary>
+            咨询评分
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.SequenceNo">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.ConsultNumber">
+            <summary>
+            咨询单号
+            YaeherPatientConsultation表ConsultNumber
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.ConsultID">
+             <summary>
+            咨询ID
+            YaeherPatientConsultation表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.ConsultantID">
+             <summary>
+            咨询用户ID
+            YaeherUser表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.ConsultantName">
+            <summary>
+            咨询用户
+            YaeherUser表fullname
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.PatientID">
+             <summary>
+            患者ID
+            YaeherPatientLeaguerInfo表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.PatientName">
+             <summary>
+            患者名称
+            YaeherPatientLeaguerInfo表LeaguerName
+             </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.DoctorName">
+            <summary>
+            医生姓名
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.DoctorID">
+            <summary>
+            医生ID
+            YaeherUser表fullname
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.EvaluateContent">
+            <summary>
+            评论内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.EvaluateReason">
+            <summary>
+            评论内容
+            理由选择
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.StarTitle">
+            <summary>
+            星级title
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.EvaluateLevel">
+            <summary>
+            评论星级
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.EvaluateLabel">
+            <summary>
+            星级标签 Json
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.QualityLevel">
+            <summary>
+            质控评分
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.IsQuality">
+            <summary>
+            是否质控评分
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.QualityReason">
+            <summary>
+            质控原因
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationEvaluation.IsTop">
+            <summary>
+            是否置顶
+            </summary>
+        </member>
+        <member name="T:Yaeher.Consultation.ConsultationManageEntity">
+            <summary>
+            咨询实体
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationManageEntity.ConsultationInfo">
+            <summary>
+            咨询主表
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationManageEntity.ConsultationFileList">
+            <summary>
+            咨询文件附件地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationManageEntity.ReplyList">
+            <summary>
+            回答 追问
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationManageEntity.PhoneReplyList">
+            <summary>
+            电话回复
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationManageEntity.EvaluationList">
+            <summary>
+            订单评分
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationManageEntity.orderManageList">
+            <summary>
+            订单管理
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationManageEntity.OrderTradeList">
+            <summary>
+            订单交易记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationManageEntity.refundManageList">
+            <summary>
+            订单退单记录
+            </summary>
+        </member>
+        <member name="T:Yaeher.Consultation.ConsultationReplyInfo">
+            <summary>
+            回答 追问
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationReplyInfo.ReplyInfo">
+            <summary>
+            回答 追问
+            </summary>
+        </member>
+        <member name="P:Yaeher.Consultation.ConsultationReplyInfo.ReplyAttachmentFile">
+            <summary>
+            回答 追问附件
+            </summary>
+        </member>
+        <member name="T:Yaeher.ConsultationReply">
+            <summary>
+            咨询回答
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.SequenceNo">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.ConsultNumber">
+            <summary>
+            咨询单号
+            YaeherPatientConsultation表ConsultNumber
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.ConsultID">
+             <summary>
+            咨询ID
+            YaeherPatientConsultation表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.ConsultantID">
+             <summary>
+            咨询用户ID
+            YaeherUser表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.ConsultantName">
+            <summary>
+            咨询用户
+            YaeherUser表fullname
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.PatientID">
+             <summary>
+            患者ID
+            YaeherPatientLeaguerInfo表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.PatientName">
+             <summary>
+            患者名称
+            YaeherPatientLeaguerInfo表LeaguerName
+             </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.DoctorName">
+            <summary>
+            医生姓名
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.DoctorID">
+            <summary>
+            医生ID
+            YaeherUser表fullname
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.ConsultType">
+            <summary>
+            咨询类型
+             图文 电话 或者其他
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.PatientTelephone">
+            <summary>
+            联系电话
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.PatientCity">
+            <summary>
+            所在城市
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.IllnessDescription">
+            <summary>
+            咨询问题描述
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.ReplyType">
+            <summary>
+            回答类型   回答 追问
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.RepayIllnessDescription">
+            <summary>
+            问题描述
+            </summary>
+        </member>
+        <member name="P:Yaeher.ConsultationReply.ReplyState">
+            <summary>
+            处理状态  草稿 提交
+            </summary>
+        </member>
+        <member name="T:Yaeher.OrderManage">
+            <summary>
+            订单管理
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.SequenceNo">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.OrderNumber">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.ConsultNumber">
+            <summary>
+            咨询单号
+            YaeherPatientConsultation表ConsultNumber
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.ConsultID">
+             <summary>
+            咨询ID
+            YaeherPatientConsultation表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.ConsultType">
+            <summary>
+            咨询类型
+            图文 电话 或者其他
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.ConsultantID">
+             <summary>
+            咨询用户ID
+            YaeherUser表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.ConsultantName">
+            <summary>
+            咨询用户
+            YaeherUser表fullname
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.PatientID">
+             <summary>
+            患者ID
+            YaeherPatientLeaguerInfo表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.PatientName">
+             <summary>
+            患者名称
+            YaeherPatientLeaguerInfo表LeaguerName
+             </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.DoctorName">
+            <summary>
+            医生姓名
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.DoctorID">
+            <summary>
+            医生ID
+            YaeherUser表fullname
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.OrderCurrency">
+            <summary>
+            订单币别
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.OrderMoney">
+            <summary>
+            订单总金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.ReceivablesType">
+            <summary>
+            医生收款类型 
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.ReceivablesNumber">
+            <summary>
+            医生收款账号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.ServiceID">
+            <summary>
+            产品ID
+            医生提供服务费用表ServiceMoneyList表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.ServiceName">
+            <summary>
+            产品名称
+            医生提供服务费用表ServiceMoneyList表名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.SellerMoneyID">
+            <summary>
+            微信支付分配的商户号  
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderManage.TradeType">
+            <summary>
+            交易类型    
+            </summary>
+        </member>
+        <member name="T:Yaeher.OrderTradeRecord">
+            <summary>
+            订单交易记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.SequenceNo">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.OrderID">
+            <summary>
+            订单ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.OrderNumber">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.PayType">
+            <summary>
+            支付类型  1现金 银行卡 支付宝 微信支付 代金券 积分抵扣 等
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.OrderCurrency">
+            <summary>
+            支付币别
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.TenpayNumber">
+            <summary>
+            支付账号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.VoucherNumber">
+            <summary>
+            代金券编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.VoucherJSON">
+            <summary>
+            代金券JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.PayMoney">
+            <summary>
+            支付金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.PayAchiveTime">
+             <summary>
+            支付完成时间 其他第三方返回时间
+             </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.PaySerialNumber">
+            <summary>
+            支付流水号 其他第三方返回单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.PaymentState">
+            <summary>
+            支付状态 paid 已支付，unpaid 未支付
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.PaymentSource">
+            <summary>
+            单据来源(订单，退单)
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.PaymentSourceCode">
+            <summary>
+            单据来源(订单code，退单code)
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.WXPayBillno">
+            微信支付商户订单号(供查询订单状态信息和退单用)
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.WXTransactionId">
+            <summary>
+            微信支付订单号	
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTradeRecord.WXOrderQuery">
+            <summary>
+            微信订单信息
+            </summary>
+        </member>
+        <member name="T:Yaeher.PhoneReplyRecord">
+            <summary>
+            电话回复记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.SequenceNo">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.ConsultNumber">
+             <summary>
+             咨询单号
+            YaeherPatientConsultation表ConsultNumber
+             </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.ConsultID">
+             <summary>
+             咨询ID
+            YaeherPatientConsultation表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.ConsultantID">
+             <summary>
+             咨询用户ID
+            YaeherUser表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.ConsultantName">
+             <summary>
+             咨询用户
+            YaeherUser表fullname
+             </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.PatientID">
+             <summary>
+             患者ID
+            YaeherPatientLeaguerInfo表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.PatientName">
+             <summary>
+             患者名称
+            YaeherPatientLeaguerInfo表LeaguerName
+             </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.DoctorID">
+             <summary>
+             咨询医生ID
+            YaeherUser表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.DoctorName">
+             <summary>
+             医生名称
+            YaeherUser表fullname
+             </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.CallTime">
+            <summary>
+            拨通时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.CallDuration">
+            <summary>
+            拨通时长
+            </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.CallIntro">
+            <summary>
+            拨通说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.RecordAddress">
+            <summary>
+            录音地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.Caller">
+            <summary>
+            主叫电话号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.Callee">
+            <summary>
+            被叫电话号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.IsUpload">
+            <summary>
+            是否上传
+            </summary>
+        </member>
+        <member name="P:Yaeher.PhoneReplyRecord.StorageAddress">
+            <summary>
+            存储地址
+            </summary>
+        </member>
+        <member name="T:Yaeher.RefundManage">
+            <summary>
+            订单退单管理
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.SequenceNo">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.RefundNumber">
+            <summary>
+            退单单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.ConsultID">
+            <summary>
+            咨询ID
+            YaeherPatientConsultation表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.ConsultNumber">
+            <summary>
+            咨询单号
+            YaeherPatientConsultation表ConsultNumber
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.OrderID">
+            <summary>
+            订单id
+            YaeherPatientConsultation表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.OrderNumber">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.ConsultantID">
+            <summary>
+            咨询用户ID
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.ConsultantName">
+             <summary>
+             咨询用户
+            YaeherUser表fullname
+             </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.PatientID">
+            <summary>
+            患者ID
+            YaeherPatientLeaguerInfo表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.PatientName">
+             <summary>
+             患者名称
+            YaeherPatientLeaguerInfo表LeaguerName
+             </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.DoctorID">
+            <summary>
+            咨询医生ID
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.DoctorName">
+             <summary>
+             医生名称
+            YaeherUser表fullname
+             </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.OrderCurrency">
+            <summary>
+            订单币别
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.OrderMoney">
+            <summary>
+            订单总金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.ServiceID">
+            <summary>
+            产品ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.ServiceName">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.SellerMoneyID">
+            <summary>
+            微信支付商户号
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.CheckState">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.Checker">
+            <summary>
+            审核人 userid
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.RefundRemarks">
+            <summary>
+            退单内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.RefundManage.RefundReason">
+            <summary>
+            退单原因json
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherConsultation">
+            <summary>
+            咨询管理
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.ConsultantID">
+            <summary>
+            咨询用户ID
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.ConsultantName">
+            <summary>
+            咨询姓名
+            YaeherUser表fullname
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.ConsultantJSON">
+            <summary>
+            咨询用户JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.DoctorJSON">
+            <summary>
+            咨询医生JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.PatientID">
+            <summary>
+            患者ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.PatientName">
+            <summary>
+            患者姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.PatientJSON">
+            <summary>
+            患者JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.ConsultType">
+            <summary>
+            咨询类型
+            图文 电话 或者其他
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.IIInessType">
+            <summary>
+            疾病类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.IIInessJSON">
+            <summary>
+            疾病类型JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.PhoneNumber">
+            <summary>
+            联系电话
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.PatientCity">
+            <summary>
+            所在城市
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.IIInessDescription">
+            <summary>
+            问题描述
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.InquiryTimes">
+            <summary>
+            最大追问次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.ConsultState">
+            <summary>
+            咨询问诊状态,已创建，咨询中,已退单,已完成
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.OvertimeRemindTimes">
+            <summary>
+            咨询超时提醒次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.Overtime">
+            <summary>
+            咨询退单超时时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.RefundBy">
+            <summary>
+            退单人
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.RefundTime">
+            <summary>
+            退单时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.RefundType">
+            <summary>
+            退单类型
+            来源 患者 医生 系统
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.RefundNumber">
+            <summary>
+            退单单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.RefundState">
+            <summary>
+            退单状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.RefundReason">
+            <summary>
+            退单理由
+            理由选择
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.RefundRemarks">
+            <summary>
+            退单原因 手填
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.RecommendDoctorID">
+            <summary>
+            推荐医生
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.RecommendDoctorName">
+            <summary>
+            推荐医生姓名
+            YaeherUser表name  医生name
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.HasReply">
+            <summary>
+            是否已回复
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.Age">
+            <summary>
+            患者年龄
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.ServiceMoneyListId">
+            <summary>
+            医生提供服务费用表Id
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.HasInquiryTimes">
+            <summary>
+            剩余追问次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.IsReturnVisit">
+            <summary>
+            是否已回访
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.IsEvaluate">
+            <summary>
+            是否评价
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.ReturnVisit">
+            <summary>
+            回访内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.ReturnVisitTime">
+            <summary>
+            回访时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.Completetime">
+            <summary>
+            完成时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherConsultation.Platform">
+            <summary>
+            咨询单下单来源
+            </summary>
+        </member>
+        <member name="T:Yaeher.Doctor.CollectConsultation">
+            <summary>
+            收藏病例夹
+            </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.CollectConsultation.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.CollectConsultation.ConsultID">
+            <summary>
+            咨询Id
+            </summary>
+        </member>
+        <member name="T:Yaeher.Doctor.DoctorEmployment">
+            <summary>
+            医生从业
+            </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.DoctorEmployment.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.DoctorEmployment.HospitalName">
+            <summary>
+            工作医院
+            </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.DoctorEmployment.Department">
+            <summary>
+            所在科室
+            </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.DoctorEmployment.WorkYear">
+            <summary>
+            工作年限
+            </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.DoctorEmployment.Title">
+            <summary>
+            职称
+            </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.DoctorEmployment.StartTime">
+             <summary>
+            起始日期
+             </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.DoctorEmployment.EndTime">
+             <summary>
+            结束日期
+             </summary>
+        </member>
+        <member name="P:Yaeher.Doctor.DoctorEmployment.AuditIndex">
+            <summary>
+            0 未审核 1已审核 2已过期的审核
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorClinicApply">
+            <summary>
+            医生申请门诊
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.DoctorJSON">
+            <summary>
+            医生JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.ApplyType">
+            <summary>
+            申请类型
+            增加  更换门诊
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.ClinicID">
+            <summary>
+            申请门诊ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.ClinicName">
+            <summary>
+            申请门诊名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.ClinicJSON">
+            <summary>
+            申请门诊JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.ApplyRemark">
+            <summary>
+            申请备注原因
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorClinicApply.CheckRes">
+            <summary>
+            审核结果
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorFileApply">
+            <summary>
+            医生申请上传文件
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorFileApply.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorFileApply.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorFileApply.DocumentsUse">
+             <summary>
+            文件用途  申请上传，转科室上传、增加科室上传
+             </summary>
+        </member>
+        <member name="P:Yaeher.DoctorFileApply.FileType">
+             <summary>
+            上传类型   身份证 职业证 资格证
+             </summary>
+        </member>
+        <member name="P:Yaeher.DoctorFileApply.TypeDetail">
+            <summary>
+            身份证上 下
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorFileApply.Address">
+            <summary>
+            上传地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorFileApply.DoctorClinicApplyId">
+            <summary>
+            医生申请或修改科室Id
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorIncome">
+            <summary>
+            我的收入
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorIncome.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorIncome.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorIncome.IncomeTimeType">
+             <summary>
+             收入时间类型 
+            年 月 季 天
+             </summary>
+        </member>
+        <member name="P:Yaeher.DoctorIncome.Total">
+            <summary>
+            统计金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorIncome.TotalDate">
+            <summary>
+            更新版本
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorPaper">
+            <summary>
+            发布文章
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.PaperTiltle">
+            <summary>
+            文章标题
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.PaperContent">
+            <summary>
+            文章内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.PaperFrom">
+            <summary>
+            文章来源 
+            个人 或者案例
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.ConsultNumber">
+            <summary>
+            案例编号
+            YaeherPatientConsultation表ConsultNumber
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.ConsultID">
+            <summary>
+            案例Id
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.PaperAddress">
+            <summary>
+            文章附件地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.CheckState">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorPaper.ImageFie">
+            <summary>
+            文章图片
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorRelation">
+            <summary>
+            医生与标签关系
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRelation.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRelation.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRelation.LableID">
+             <summary>
+            标签ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRelation.LableName">
+             <summary>
+            标签名称
+             </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRelation.LableJSON">
+            <summary>
+            标签JSON
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorScheduling">
+            <summary>
+            医生排班管理
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.DoctorName">
+            <summary>
+            医生名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.DoctorJSON">
+            <summary>
+            医生JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.SchedulingDate">
+            <summary>
+            排班时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.SchedulingTime">
+            <summary>
+            排班时段 上午，下午，晚上
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.Duplication">
+            <summary>
+            重复方式 每天，每周，从不
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.ClinicType">
+            <summary>
+            门诊类型    普通 ，特诊，专家
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.ClinicIDAdd">
+            <summary>
+            门诊地点
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.RegistrationFee">
+            <summary>
+            挂号费
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorScheduling.ServiceState">
+            <summary>
+            是否开启
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorServiceLog">
+            <summary>
+            医生提供服务log
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorServiceLog.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorServiceLog.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorServiceLog.ServiceType">
+            <summary>
+            服务类型 
+            图文 电话  视频 等方式
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorServiceLog.ServiceDuration">
+            <summary>
+            服务时长
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorServiceLog.ServiceExpense">
+            <summary>
+            服务费用
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorServiceLog.ServiceFrequency">
+            <summary>
+            最大服务次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorServiceLog.ServiceTime">
+            <summary>
+            开放服务时间
+            </summary>
+        </member>
+        <member name="T:Yaeher.IncomeDetails">
+            <summary>
+            收入明细
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.ConsultID">
+            <summary>
+            咨询ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.ConsultJSON">
+            <summary>
+            咨询JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.OrderNumber">
+            <summary>
+            订单单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.OrderCurrency">
+            <summary>
+            订单币别
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.OrderMoney">
+            <summary>
+            订单金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.ProportionMoney">
+            <summary>
+            分成金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDetails.TotalDate">
+            <summary>
+            统计日期
+            </summary>
+        </member>
+        <member name="T:Yaeher.IncomeDevide">
+            <summary>
+            订单收入分配_医生
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.ConsultID">
+            <summary>
+            咨询ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.DoctorName">
+            <summary>
+            咨询医生
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.OrderID">
+            <summary>
+            订单ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.OrderNumber">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.OrderMoney">
+            <summary>
+            订单总金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.OrderCurrency">
+            <summary>
+            订单币别
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.DevideMoney">
+            <summary>
+            订单分成金额(医生)
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.DevideRatio">
+            <summary>
+            订单分成比例(医生)
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.DevideTime">
+            <summary>
+            订单分成时间(医生)
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.WXSharing">
+            <summary>
+            微信分成状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.IncomeDevide.WXSharingJson">
+            <summary>
+            微信分成结果
+            </summary>
+        </member>
+        <member name="T:Yaeher.OrderEarlyWarning">
+            <summary>
+            订单预警记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.ConsultID">
+            <summary>
+            咨询ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.OrderID">
+            <summary>
+            订单id
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.OrderNumber">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.ConsultantID">
+            <summary>
+            咨询用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.ConsultantName">
+            <summary>
+            咨询用户
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.PatientID">
+            <summary>
+            患者ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.PatientName">
+            <summary>
+            患者名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.DoctorID">
+            <summary>
+            咨询医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.DoctorName">
+            <summary>
+            医生名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.RemindDescription">
+            <summary>
+            超时提醒内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderEarlyWarning.RemindState">
+            <summary>
+            预警状态  是否执行
+            </summary>
+        </member>
+        <member name="T:Yaeher.OrderTimeoutReminder">
+            <summary>
+            订单超时提醒记录_医生
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.ConsultID">
+            <summary>
+            咨询ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.OrderID">
+            <summary>
+            订单id
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.OrderNumber">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.ConsultantID">
+            <summary>
+            咨询用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.ConsultantName">
+            <summary>
+            咨询用户
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.PatientID">
+            <summary>
+            患者ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.PatientName">
+            <summary>
+            患者名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.DoctorID">
+            <summary>
+            咨询医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.OrderTimeoutReminder.RemindDescription">
+            <summary>
+            超时提醒内容
+            </summary>
+        </member>
+        <member name="T:Yaeher.QualityControlManage">
+            <summary>
+            质控委员处理
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.ConsultID">
+            <summary>
+            咨询ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.ConsultantID">
+            <summary>
+            咨询用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.ConsultantName">
+            <summary>
+            咨询用户
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.DoctorID">
+            <summary>
+            咨询医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.DoctorName">
+            <summary>
+            医生名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.ConsultType">
+            <summary>
+            咨询类型  图文 电话 或者其他
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.QualityType">
+            <summary>
+            质控类型  来源评分 来源投诉
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.QualityLevel">
+            <summary>
+            评分
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.RepayIllnessDescription">
+            <summary>
+            处理描述
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityControlManage.ReplyState">
+            <summary>
+            处理状态  未处理  处理  退回
+            </summary>
+        </member>
+        <member name="T:Yaeher.ServiceMoneyList">
+            <summary>
+            医生提供服务费用表
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.ServiceType">
+            <summary>
+            服务类型 
+            1，图文 2，电话  3，视频 等方式
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.ServiceTypeValue">
+            <summary>
+            服务类型 
+            1，图文 2，电话  3，视频 等方式
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.ServiceDuration">
+            <summary>
+            服务时长
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.ServiceExpense">
+            <summary>
+            服务费用
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.ServiceFrequency">
+            <summary>
+            最大服务次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.ServiceState">
+            <summary>
+            服务开启状态  
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.ServiceTime">
+            <summary>
+            开放服务时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.ServiceMoneyList.ActualNumber">
+            <summary>
+            实际接单数
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherDoctor">
+            <summary>
+            医生基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.Address">
+            <summary>
+            医生住址
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.HospitalName">
+            <summary>
+            工作医院
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.Department">
+            <summary>
+            所在科室
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.WorkYear">
+            <summary>
+            工作年限
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.Title">
+            <summary>
+            职称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.GraduateSchool">
+            <summary>
+            毕业学校
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.IsBelieveTCM">
+            <summary>
+            是否相信中医
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.IsServiceConscious">
+            <summary>
+            是否觉得有服务意识   
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.WechatNum">
+            <summary>
+            关联微信号
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.PhoneNumber">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.Recommender">
+            <summary>
+            推荐人
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.RecommenderName">
+            <summary>
+            推荐人
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.CheckRes">
+            <summary>
+            审核结果
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.TsetTime">
+            <summary>
+            考试时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.TestID">
+            <summary>
+            试题编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.BaseTestRes">
+             <summary>
+            基础考试结果
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.SimTestRes">
+             <summary>
+            模拟考试结果
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.AuthCheckRes">
+             <summary>
+            认证审核状态
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.AuthChecker">
+            <summary>
+            认证审核人
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.AuthType">
+            <summary>
+            认证类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.AuthCheckRemark">
+             <summary>
+            认证审核备注
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.AuthCheckTime">
+            <summary>
+            认证审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.UserImageFile">
+            <summary>
+            背景图片
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.Resume">
+            <summary>
+            简介
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.IDCard">
+            <summary>
+            身份证
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.IsSharing">
+            <summary>
+            是否开启分账
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.IsAbroad">
+            <summary>
+            是否海外医生
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.ServiceState">
+            <summary>
+            服务状态  是否可以咨询
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherDoctor.ReceiptState">
+            <summary>
+            接单状态 是否满单
+            </summary>
+        </member>
+        <member name="T:Yaeher.EntityBaseModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.EntityBaseModule.CreatedBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:Yaeher.EntityBaseModule.CreatedOn">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:Yaeher.EntityBaseModule.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:Yaeher.EntityBaseModule.ModifyOn">
+            <summary>
+            修改日期
+            </summary>
+        </member>
+        <member name="P:Yaeher.EntityBaseModule.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:Yaeher.EntityBaseModule.DeleteBy">
+            <summary>
+            删除人
+            </summary>
+        </member>
+        <member name="P:Yaeher.EntityBaseModule.DeleteTime">
+            <summary>
+            删除时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.EntityBaseModule.Secret">
+            <summary>
+            自签名
+            </summary>
+        </member>
+        <member name="M:Yaeher.EntityBaseModule.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.Enum.SmsTypeEnum">
+            <summary>
+            阿里短息模板类型
+            </summary>
+        </member>
+        <member name="F:Yaeher.Enum.SmsTypeEnum.P_PaySuccess">
+            <summary>
+            患者成功支付通知
+            </summary>
+        </member>
+        <member name="F:Yaeher.Enum.SmsTypeEnum.P_ConsulReply">
+            <summary>
+            患者收到咨询回复提醒
+            </summary>
+        </member>
+        <member name="F:Yaeher.Enum.SmsTypeEnum.P_InquiryDown">
+            <summary>
+            追问倒计时提醒
+            </summary>
+        </member>
+        <member name="F:Yaeher.Enum.SmsTypeEnum.P_Evaluate">
+            <summary>
+            评价提醒
+            </summary>
+        </member>
+        <member name="F:Yaeher.Enum.SmsTypeEnum.P_OverTimeRefund">
+            <summary>
+            超时退单提醒
+            </summary>
+        </member>
+        <member name="F:Yaeher.Enum.SmsTypeEnum.P_DoctorRefund">
+            <summary>
+            医生退单提醒
+            </summary>
+        </member>
+        <member name="T:Yaeher.EventEntitys.PendingEvent">
+            <summary>
+            待办事件： 比如 a b 订阅了 c ，c发送了一条消息，则待办就有两条数据
+            可以看作是Publish 发布者和  Subscribe 订阅者的合集
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.PendingEvent.SubscribeID">
+            <summary>
+            订阅者ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.PendingEvent.Subscriber">
+            <summary>
+            订阅者
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.PendingEvent.CallbackUrl">
+            <summary>
+            订阅者url
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.PendingEvent.RegisterTime">
+            <summary>
+            订阅时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.PendingEvent.ActionStatus">
+            <summary>
+            订阅状态
+            </summary>
+        </member>
+        <member name="T:Yaeher.EventEntitys.Publishs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.TemplateCode">
+            <summary>
+            发布模板
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.OperationType">
+            <summary>
+            操作类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.MessageRemark">
+            <summary>
+            备注说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.Publisher">
+            <summary>
+            发布者名称  Site+名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.PublishUrl">
+            <summary>
+            发布者url
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.EventName">
+            <summary>
+            发布事件名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.EventCode">
+            <summary>
+            发布事件编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.BusinessID">
+            <summary>
+            事件对应的业务ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.BusinessCode">
+            <summary>
+            事件对应的业务编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.BusinessJSON">
+            <summary>
+            事件json 对象(发布实体类的json格式)
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.PublishedTime">
+            <summary>
+            业务发生的时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.PublishStatus">
+            <summary>
+            发送的状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Publishs.ServerClient">
+            <summary>
+            来源 Server Client
+            </summary>
+        </member>
+        <member name="T:Yaeher.EventEntitys.ReceiveEvent">
+            <summary>
+            处理记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.ReceiveEvent.PublishId">
+            <summary>
+            发布的消息id
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.ReceiveEvent.SubscribeID">
+            <summary>
+            接受者ID/// 订阅者ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.ReceiveEvent.ReceptionMessage">
+            <summary>
+            接收结果
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.ReceiveEvent.ReceptionDate">
+            <summary>
+            接受时间
+            </summary>
+        </member>
+        <member name="T:Yaeher.EventEntitys.Subscribe">
+            <summary>
+            订阅者
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribe.Subscriber">
+            <summary>
+            订阅者
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribe.CallbackUrl">
+            <summary>
+            订阅者url/事件处理url
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribe.EventName">
+            <summary>
+            订阅事件名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribe.EventCode">
+            <summary>
+            订阅事件
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribe.RegisterTime">
+            <summary>
+            订阅时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribe.ActionStatus">
+            <summary>
+            订阅状态 0 /1 未订阅/订阅
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribe.ServerClient">
+            <summary>
+            来源 Server Client
+            </summary>
+        </member>
+        <member name="T:Yaeher.EventEntitys.Subscribetion">
+            <summary>
+            订阅者实体  订阅执行
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.Subscriber">
+            <summary>
+            订阅者
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.CallbackUrl">
+            <summary>
+            订阅url
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.EventName">
+            <summary>
+            订阅事件名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.EventCode">
+            <summary>
+            订阅事件
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.BusinessID">
+            <summary>
+            事件业务ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.BusinessCode">
+            <summary>
+            事件业务Code
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.BusinessJSON">
+            <summary>
+            事件业务json对象
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.PublishedTime">
+            <summary>
+            事件业务发生时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.ExecuteStatus">
+            <summary>
+            执行状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.EventEntitys.Subscribetion.ExecuteDate">
+            <summary>
+            执行时间
+            </summary>
+        </member>
+        <member name="T:Yaeher.HangFire.HangFireJob">
+            <summary>
+            定时服务表
+            </summary>
+        </member>
+        <member name="P:Yaeher.HangFire.HangFireJob.JobName">
+            <summary>
+            执行job名称 咨询完成   咨询退单  咨询预警  评分统计 订单统计
+            </summary>
+        </member>
+        <member name="P:Yaeher.HangFire.HangFireJob.JobCode">
+            <summary>
+            执行job编号  CompleteConsultation  ReturnConsultation WarningConsultation EvaluationTotal OrderTotal IncomeTotal RemindInquiry RemindEvaluation
+            </summary>
+        </member>
+        <member name="P:Yaeher.HangFire.HangFireJob.BusinessID">
+            <summary>
+            事件对应的业务ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.HangFire.HangFireJob.BusinessCode">
+            <summary>
+            事件对应的业务编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.HangFire.HangFireJob.JobRunTime">
+            <summary>
+            Job执行时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.HangFire.HangFireJob.JobRunID">
+            <summary>
+            Job执行返回ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.HangFire.HangFireJob.JobSates">
+            <summary>
+            执行job状态  Open Complete Close
+            </summary>
+        </member>
+        <member name="P:Yaeher.HangFire.HangFireJob.CallbackUrl">
+            <summary>
+            回调job方法
+            </summary>
+        </member>
+        <member name="P:Yaeher.HangFire.HangFireJob.JobParameter">
+            <summary>
+            回调方法执行参数
+            </summary>
+        </member>
+        <member name="T:Yaeher.NumericalStatement.ConsultationOrderTotal">
+            <summary>
+            订单汇总表 
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.DoctorJSON">
+            <summary>
+            医生JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.OrderTotal">
+            <summary>
+            订单总数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.RevenueTotal">
+            <summary>
+            订单总金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.TotalType">
+            <summary>
+            统计时间类型 日、月、年
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.RefundTotal">
+            <summary>
+            退单数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.CompleteTotal">
+            <summary>
+            完成数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.TotalDate">
+            <summary>
+            统计时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.RefundMoney">
+            <summary>
+            退单金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotal.CompleteMoney">
+            <summary>
+            完成单金额
+            </summary>
+        </member>
+        <member name="T:Yaeher.NumericalStatement.ConsultationOrderTotalCopy">
+            <summary>
+            订单汇总表 2019-05-08新增
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.DoctorJSON">
+            <summary>
+            医生JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.OrderTotal">
+            <summary>
+            订单总数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.RevenueTotal">
+            <summary>
+            订单总金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.TotalType">
+            <summary>
+            统计时间类型 日、月、年
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.RefundTotal">
+            <summary>
+            退单数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.CompleteTotal">
+            <summary>
+            完成数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.TotalDate">
+            <summary>
+            统计时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.RefundMoney">
+            <summary>
+            退单金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.ConsultationOrderTotalCopy.CompleteMoney">
+            <summary>
+            完成单金额
+            </summary>
+        </member>
+        <member name="T:Yaeher.NumericalStatement.EvaluationTotal">
+            <summary>
+            评分汇总表
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.DoctorJSON">
+            <summary>
+            医生JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.EvaluateTotal">
+            <summary>
+            评价总分
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.FiveStar">
+            <summary>
+            5星单总数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.FourStar">
+            <summary>
+            4星单总数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.ThreeStar">
+            <summary>
+            3星单总数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.TwoStar">
+            <summary>
+            2星单总数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.OneStar">
+            <summary>
+            1星单总数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.AverageEvaluate">
+            <summary>
+            平均分
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.OrderTotal">
+            <summary>
+            总单数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.AverageAnswer">
+            <summary>
+            平均回复时长
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.RevenueTotal">
+            <summary>
+            收入总额
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.RefundTotal">
+            <summary>
+            退单数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.CompleteTotal">
+            <summary>
+            完成数
+            </summary>
+        </member>
+        <member name="P:Yaeher.NumericalStatement.EvaluationTotal.ConsultEvaluateTotal">
+            <summary>
+            已被评价总数
+            </summary>
+        </member>
+        <member name="T:Yaeher.ShareDoctor">
+            <summary>
+            分享医生
+            </summary>
+        </member>
+        <member name="P:Yaeher.ShareDoctor.PatientID">
+             <summary>
+             分享人ID
+            YaeherUser表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.ShareDoctor.PatientName">
+             <summary>
+             分享人姓名
+            YaeherUser表fullname
+             </summary>
+        </member>
+        <member name="P:Yaeher.ShareDoctor.PatientJSON">
+             <summary>
+             分享人Json
+            YaeherUser表fullname
+             </summary>
+        </member>
+        <member name="P:Yaeher.ShareDoctor.DoctorID">
+            <summary>
+            医生Id
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ShareDoctor.DoctorName">
+             <summary>
+             医生姓名
+            YaeherUser表fullname
+             </summary>
+        </member>
+        <member name="P:Yaeher.ShareDoctor.DoctorJSON">
+            <summary>
+            医生Json
+            </summary>  
+        </member>
+        <member name="T:Yaeher.YaeherPatientCollection">
+            <summary>
+            我的收藏
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientCollection.UserID">
+            <summary>
+            患者ID
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientCollection.Opentype">
+             <summary>
+            操作类型
+            收藏 点赞
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientCollection.CollectionType">
+             <summary>
+            收藏类型 
+            问答或者文章
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientCollection.CollectionUrl">
+             <summary>
+            收藏链接地址
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientCollection.CollectionJSON">
+             <summary>
+            收藏信息JSON
+             </summary>
+        </member>
+        <member name="T:Yaeher.YaeherPatientDoctor">
+            <summary>
+            我的医生
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientDoctor.UserID">
+            <summary>
+            用户id
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientDoctor.DoctorID">
+             <summary>
+            医生ID
+            YaeherUser表ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientDoctor.DoctorName">
+             <summary>
+            医生名称
+            YaeherUser表fullname
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientDoctor.DoctorJSON">
+             <summary>
+            医生JSON 存储医生所有信息
+             </summary>
+        </member>
+        <member name="T:Yaeher.YaeherPatientLeaguerInfo">
+            <summary>
+            患者成员管理
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.LeaguerName">
+            <summary>
+            成员名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.UserID">
+            <summary>
+            患者ID
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.Relationship">
+             <summary>
+            与本人关系
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.PhoneNumber">
+             <summary>
+            成员联系电话
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.Birthday">
+             <summary>
+            生日
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.Sex">
+             <summary>
+            性别 1，男，2，女
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.AllergicHistory">
+             <summary>
+            过敏史
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.HasAllergic">
+            <summary>
+            有无过敏史
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.Address">
+             <summary>
+            地址
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.Email">
+             <summary>
+            邮箱
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.Wechat">
+             <summary>
+            微信号
+             </summary>
+        </member>
+        <member name="P:Yaeher.YaeherPatientLeaguerInfo.IDCard">
+             <summary>
+            用户身份证号码
+             </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.BusinessNum">
+            <summary>
+            业务编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.BusinessTypeId">
+            <summary>
+            业务类型Id
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.BusinessTypeName">
+            <summary>
+            业务类型名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.OutTradeNo">
+            <summary>
+            商户交易号
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.TransactionId">
+            <summary>
+            交易流水号
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.PaidAmount">
+            <summary>
+            支付金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.ReceivedAmount">
+            <summary>
+            实收金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.BalanceAmount">
+            <summary>
+            可退款金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.PayType">
+            <summary>
+            支付类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.PayStatus">
+            <summary>
+            支付状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.PaidOn">
+            <summary>
+            支付完成时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.OpenId">
+            <summary>
+            用户标识
+            </summary>
+        </member>
+        <member name="P:Yaeher.PayRecord.PrePayId">
+            <summary>
+            预支付交易会话标识
+            </summary>
+        </member>
+        <member name="T:Yaeher.Payment.PrePayIdCache">
+            <summary>
+            缓存pre_pay
+            </summary>
+        </member>
+        <member name="P:Yaeher.Payment.PrePayIdCache.PrePay_Id">
+            <summary>
+            pre_payid
+            </summary>
+        </member>
+        <member name="P:Yaeher.Payment.PrePayIdCache.UsageCount">
+            <summary>
+            使用次数
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.AcceptTencentWechar">
+            <summary>
+            接受微信发送消息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.ToUserName">
+            <summary>
+            开发者微信号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.FromUserName">
+            <summary>
+            发送方帐号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.NickName">
+            <summary>
+            用户昵称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.UserImage">
+            <summary>
+            用户图像
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.FullName">
+            <summary>
+            咨询者全称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.CreateTime">
+            <summary>
+            消息创建时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.MsgType">
+            <summary>
+            消息类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Content">
+            <summary>
+            文本消息内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.PicUrl">
+            <summary>
+            图片链接
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.MediaId">
+            <summary>
+            视频消息媒体id
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.ThumbMediaId">
+            <summary>
+            视频消息缩略图的媒体id
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Format">
+            <summary>
+            语音格式
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Recognition">
+            <summary>
+            语音识别结果
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Title">
+            <summary>
+            消息标题
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Description">
+            <summary>
+            消息描述
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Url">
+            <summary>
+            消息链接
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Location_X">
+            <summary>
+            地理位置维度
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Location_Y">
+            <summary>
+            地理位置经度
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Scale">
+            <summary>
+            地图缩放大小
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.Label">
+            <summary>
+            地理位置信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.MsgId">
+            <summary>
+            消息iD
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptTencentWechar.MessageFrom">
+            <summary>
+            消息来源  客服 咨询者
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.AcceptWecharState">
+            <summary>
+            客服处理咨询问答回复状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.ConsultantID">
+            <summary>
+            咨询用户ID
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.ConsultantName">
+            <summary>
+            咨询姓名
+            YaeherUser表fullname
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.NickName">
+            <summary>
+            用户昵称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.UserImage">
+            <summary>
+            用户图像
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.ConsultantJSON">
+            <summary>
+            咨询用户JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.ConsultantOpenID">
+            <summary>
+            咨询人微信OpenID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.CustomerServiceID">
+            <summary>
+            客服ID
+            YaeherUser表ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.CustomerServiceName">
+            <summary>
+            客服姓名
+            YaeherUser表fullname
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.CustomerServiceJson">
+            <summary>
+            客服用户JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.AcceptState">
+            <summary>
+            处理状态 2（开启） 3（关闭） 1（待办）
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.IsReady">
+            <summary>
+            读取状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AcceptWecharState.AcceptTime">
+            <summary>
+            系统接受消息时间
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.AliAccessTokenEntity">
+            <summary>
+            获取阿里Token值
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliAccessTokenEntity.scope">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliAccessTokenEntity.request_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliAccessTokenEntity.access_token">
+            <summary>
+            access_token 有效期为3小时 由设置  
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliAccessTokenEntity.token_type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliAccessTokenEntity.refresh_token">
+            <summary>
+            刷新tokencode值 刷新token有效期为一年
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliAccessTokenEntity.id_token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliAccessTokenEntity.additional_information">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliAccessTokenEntity.expires_in">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.additional_information">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.additional_information.refresh_token_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.AccessTokenInfo">
+            <summary>
+            获取Alitakon
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AccessTokenInfo.code">
+            <summary>
+            第一步获取的Code
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.AliCCC">
+            <summary>
+            Ali呼叫中心
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.Action">
+            <summary>
+            系统规定参数，StartBack2BackCall
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.InstanceId">
+            <summary>
+            呼叫中心实例ID，背靠背代理所用电话号码需要归属于该呼叫中心实例。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.WorkflowId">
+            <summary>
+            联系流ID，此联系流用来辅助建立双方通话；该字段是扩展用，请留空。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.CallCenterNumber">
+            <summary>
+            背靠背代理所用电话号码，该电话号码需要归属于instanceId指定的呼叫中心实例;若不指定，则会随机选一个指定实例下可用于外呼的号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.Caller">
+            <summary>
+            主叫号码。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.Callee">
+            <summary>
+            被叫号码。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.Format">
+            <summary>
+            返回值的类型，支持 JSON 与 XML。默认为 XML。(对于软电话SDK中所需要的返回值，需要为JSON格式)
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.Version">
+            <summary>
+            API 版本号，为日期形式：YYYY-MM-DD，本版本对应为 2017-07-05。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.Timestamp">
+             <summary>
+            请求的时间戳。日期格式按照 ISO8601 标准表示，并需要使用 UTC 时间。格式为： YYYY-MM-DDThh:mm:ssZ例如，2014-05-26T12:00:00Z（为北京时间 2014 年 5 月 26 日 20 点 0 分 0 秒）。
+             </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.SignatureType">
+            <summary>
+            	认证方式，当前为 BEARERTOKEN
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.RegionId">
+            <summary>
+            请求地域，当前为 cn-shanghai
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.SignatureNonce">
+            <summary>
+            唯一随机数，用于防止网络重放攻击。用户在不同请求间要使用不同的随机数值，长度为45位
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.BearerToken">
+            <summary>
+            访问令牌，也就是 access_token
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.PageNumber">
+            <summary>
+            分页序号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.PageSize">
+            <summary>
+            分页大小
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.StartTime">
+            <summary>
+            获取的历史数据的起始时间。缺省为0，代表从当天的0时开始。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AliCCC.StopTime">
+            <summary>
+            获取的历史数据的终止时间。缺省为0，代表截止到目前的时间。
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.ALICCListCallDetail">
+            <summary>
+            获取通话录音地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.ContactId">
+            <summary>
+            话务ID，全局唯一，对应于 ACC的ACID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.StartTime">
+            <summary>
+            电话开始时间，内呼从进入IVR开始，外呼从开始接通计算
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.Duration">
+            <summary>
+            通话持续时间，单位为秒
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.ContactType">
+            <summary>
+            通话类型, 参考枚举类型 ContactType， Inbound(0) 内呼, Outbound(1) 外呼, Internal(2) 内部通话;
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.ContactDisposition">
+            <summary>
+            电话结束原因
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.CallingNumber">
+            <summary>
+            主叫号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.CalledNumber">
+            <summary>
+            被叫号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.InstanceId">
+            <summary>
+            呼叫中心实例ID，背靠背代理所用电话号码需要归属于该呼叫中心实例。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.FileName">
+            <summary>
+            录音文件名字
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ALICCListCallDetail.SignatureUrl">
+            <summary>
+            录音文件下载url，此url被两个引号包裹，例如： “”urlDetail “” ，需要您自行处理一下，此url有效期为1小时
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.CallDetailRecordInfo">
+            <summary>
+            通话记录主表
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecordInfo.CallDetailRecords">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecordInfo.HttpStatusCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecordInfo.RequestId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecordInfo.Success">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecordInfo.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.CallDetailRecords">
+            <summary>
+            通话记录Page
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecords.TotalCount">
+            <summary>
+            对象总数
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecords.PageNumber">
+            <summary>
+            分页序号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecords.PageSize">
+            <summary>
+            分页大小
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecords.List">
+            <summary>
+            对象列表
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.CallDetail">
+            <summary>
+            通话记录List
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetail.CallDetailRecord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.CallDetailRecord">
+            <summary>
+            通话记录明细
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.StartTime">
+            <summary>
+            	电话开始时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.ContactType">
+            <summary>
+            通话类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.ContactDisposition">
+            <summary>
+            电话结束原因
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.CalledNumber">
+            <summary>
+            被叫号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.Recordings">
+            <summary>
+            坐席信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.InstanceId">
+            <summary>
+            呼叫中心实例ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.ExtraAttr">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.Agents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.AgentNames">
+            <summary>
+            参与通话的座席，多个座席之间以逗号分隔。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.SkillGroupNames">
+            <summary>
+            参与通话的座席所述的技能组，多个技能组以逗号分隔
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.CallingNumber">
+            <summary>
+            主叫号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.Duration">
+            <summary>
+            通话持续时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CallDetailRecord.ContactId">
+            <summary>
+            话务ID，全局唯一，对应于 ACC的ACID
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.RecordingInfo">
+            <summary>
+            通话记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RecordingInfo.Recording">
+            <summary>
+            座席ID
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.Recordings">
+            <summary>
+            通话记录详细
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Recordings.FileDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Recordings.AgentName">
+            <summary>
+            座席名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Recordings.FileName">
+            <summary>
+            录音文件名
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Recordings.Duration">
+            <summary>
+            通话时长
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Recordings.ContactId">
+            <summary>
+            话务ID，全局唯一，对应于 ACC的ACID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Recordings.StartTime">
+            <summary>
+            通话开始时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Recordings.AgentId">
+            <summary>
+            座席ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Recordings.Agents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.Agents">
+            <summary>
+            坐席记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Agents.CallDetailAgent">
+            <summary>
+            坐席信息
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.CallDetailAgent">
+            <summary>
+            坐席详细记录
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.Page`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Page`1.TotalCount">
+            <summary>
+            对象总数
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Page`1.PageNumber">
+            <summary>
+            分页序号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Page`1.PageSize">
+            <summary>
+            分页大小
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Page`1.List">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.MediaDownload">
+            <summary>
+            获取下载文件路径
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.MediaDownload.MediaDownloadParam">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.MediaDownloadParam">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.MediaDownloadParam.SignatureUrl">
+            <summary>
+            录音文件下载url
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.MediaDownloadParam.FileName">
+            <summary>
+            录音文件名
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AppletToken.OpenId">
+            <summary>
+            小程序OpenId
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AppletToken.AppletFromId">
+            <summary>
+            用于消息模板
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.AppletToken.UnionId">
+            <summary>
+            开放平台
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.CompanyConfig">
+            <summary>
+            公司配置
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CompanyConfig.ConfigType">
+            <summary>
+            参数类别
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CompanyConfig.ConfigImageUrl">
+            <summary>
+            参数类别
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CompanyConfig.ConfigTitle">
+            <summary>
+            参数类别
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.CompanyConfig.ConfigContent">
+            <summary>
+            参数类别
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.ConfigureKeyword">
+            <summary>
+            关键词配置
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.KeyWord">
+            <summary>
+            关键词
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.RespType">
+            <summary>
+            回复类型1：图文 2纯文字 3视频
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.RespTitle">
+            <summary>
+            回复标题
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.Status">
+            <summary>
+            上线状态 1：上线 0： 下线
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.PicUrl">
+            <summary>
+            链接图片路径
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.TxtContent">
+            <summary>
+            文字内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.LinkTxt">
+            <summary>
+            链接文字显示
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.LinkUrl">
+            <summary>
+            链接地址（包含文字链接和图文链接）
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.MediaId">
+            <summary>
+            视频地址orMediaId
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.IsMatchOffice">
+            <summary>
+            是否匹配科室
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.ConfigureKeyword.IsMatchArticle">
+            <summary>
+            是否匹配文章
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.LoginOnLog">
+            <summary>
+            登陆日志表
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.LoginOnLog.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.LoginOnLog.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.LoginOnLog.UserPhone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.LoginOnLog.UserEmail">
+            <summary>
+            关联微信号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.LoginOnLog.Platform">
+            <summary>
+            登陆平台
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.LoginOnLog.ClientIP">
+            <summary>
+            客户端IP
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.QuickReply">
+            <summary>
+            快捷回复
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.QuickReply.UseOf">
+            <summary>
+            用途
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.QuickReply.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.QuickReply.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.QuickReply.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.RecommendedOrdering">
+            <summary>
+            推荐排序
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RecommendedOrdering.ClinicID">
+            <summary>
+            科室ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RecommendedOrdering.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RecommendedOrdering.ItemSort">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.RelationLabelGroup">
+            <summary>
+            标签分组
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RelationLabelGroup.GroupName">
+            <summary>
+            标签组名
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RelationLabelGroup.LableID">
+            <summary>
+            标签ID 已数组格式存储
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RelationLabelGroup.LableName">
+            <summary>
+            标签名称 已数组格式存储
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.RelationLabelList">
+            <summary>
+            标签关系表
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RelationLabelList.RelationCode">
+            <summary>
+            关系类型 科室 Clinic 医生 Doctor 文章 Paper 问答 Question
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RelationLabelList.BusinessID">
+            <summary>
+            事件对应的业务ID  对应的科室ID 医生ID 文章ID 问答ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RelationLabelList.BusinessName">
+            <summary>
+            对应的 科室名称 医生名称 文章ID 问答ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RelationLabelList.GroupName">
+            <summary>
+            标签组名
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RelationLabelList.LableID">
+            <summary>
+            标签ID 
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.RelationLabelList.LableName">
+            <summary>
+            标签名称 
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.SendMessageTemplate">
+            <summary>
+            微信发送消息模板
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageTemplate.TemplateCode">
+            <summary>
+            模板类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageTemplate.OperationType">
+            <summary>
+            操作类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageTemplate.Recipient">
+            <summary>
+            接受人
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageTemplate.BackUrl">
+            <summary>
+            回访Url
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageTemplate.FirstMessage">
+            <summary>
+            FirstMessage
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageTemplate.Keyword1">
+            <summary>
+            Keyword1
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageTemplate.Keyword2">
+            <summary>
+            Keyword2
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageTemplate.Keyword3">
+            <summary>
+            Keyword3
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageTemplate.MessageRemark">
+            <summary>
+            MessageRemark
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.SysRequestLog">
+            <summary>
+            记录请求日志，特别是前端调用第三方接口
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SysRequestLog.Url">
+            <summary>
+            请求链接
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SysRequestLog.Method">
+            <summary>
+            请求方法
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SysRequestLog.Remark">
+            <summary>
+            请求方法说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SysRequestLog.ReqParam">
+            <summary>
+            请求参数
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SysRequestLog.RespParam">
+            <summary>
+            返回参数
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SysRequestLog.Code">
+            <summary>
+            接口返回编码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SysRequestLog.StatusCode">
+            <summary>
+            Http状态编码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SysRequestLog.Message">
+            <summary>
+            基本的返回message
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.SystemConfigs">
+            <summary>
+            系统配置
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.SystemType">
+            <summary>
+            固定维护
+            适用类型 AliCenter AliMessage TencentWechar TencentPay
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.SystemName">
+            <summary>
+            适合名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.AppID">
+            <summary>
+            客户ID 默认为string类型  需要自行转换int类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.AppKey">
+            <summary>
+            客户密钥
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.AppSecret">
+            <summary>
+            客户secret
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.AccessKeyID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.AccessSecret">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.RefreshTokenCode">
+            <summary>
+            用于发起阿里呼叫时刷新token
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.CallCenterNumber">
+            <summary>
+            ali呼叫的电话号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.TenPayNotify">
+            <summary>
+            腾讯支付回调Url
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.TenPayRefundNotify">
+            <summary>
+            腾讯退款回调Url
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.TenPayWxOpenNotify">
+            <summary>
+            腾讯支付回调Url
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.TenPayMchId">
+            <summary>
+            商户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.TenPayKey">
+            <summary>
+            商户支付密钥Key。登录微信商户后台，进入栏目【账户设置】【密码安全】【API 安全】【API 密钥】
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemConfigs.TenPayProfitSharing">
+            <summary>
+            是否需要分账
+            Y 分账，N 不分账，默认不分账,Y 大写
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.SystemToken">
+            <summary>
+            获取平台对应的token值
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.TokenType">
+            <summary>
+             Token类型  Wechar  Ali  JSWechar 
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.YaeherPlatform">
+            <summary>
+            平台设置
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.Appid">
+            <summary>
+            对应的Appid
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.AppSecret">
+            <summary>
+            对应Secret
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.Refresh_token">
+            <summary>
+            对应Refresh_token
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.RefreshEffectiveTime">
+            <summary>
+            刷新token有效期
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.access_token">
+            <summary>
+            返回token
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.TokenJson">
+            <summary>
+            返回整个实体类
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.EffectiveLength">
+            <summary>
+            过期时效
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SystemToken.EffectiveTime">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TencentCCC">
+            <summary>
+            腾讯呼叫中心
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentCCC.AppId">
+            <summary>
+            应用 ID 必选
+            </summary> 
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentCCC.Caller">
+            <summary>
+            主叫号码 - 显示的号码 - 从腾讯云申请的号码  必选
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentCCC.Called">
+            <summary> 
+            被叫号码  必选
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentCCC.Data">
+            <summary>
+            要进行透传的数据，128 个字节  可选
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentCCC.Timeout">
+            <summary>
+            超时未接听则挂断，20 ~ 60 之间  可选
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentCCC.EnableAi">
+            <summary>
+            智能外呼标识，为1时生效，用户说话时，会打断正在播放的语音，同时，会上报用户说话通知和识别用户说话的内容  可选
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TencentMessage">
+            <summary>
+            腾讯短信对接实体
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentMessage.NationCode">
+            <summary>
+            支持发送的区号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentMessage.PhoneNumber">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentMessage.TemplateId">
+            <summary>
+            模板 ID，在控制台审核通过的模板 ID  在短信正文中的模板Id
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentMessage.Parameters">
+            <summary>
+            模板参数，若模板没有参数，请提供为空数组,
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentMessage.Sign">
+            <summary>
+            短信签名，如果使用默认签名，该字段可缺省
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentMessage.Extend">
+            <summary>
+            短信码号扩展号，格式为纯数字串，其他格式无效。默认没有开通，开通请联系 腾讯云短信技术支持
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentMessage.Ext">
+            <summary>
+            用户的 session 内容，腾讯 server 回包中会原样返回，可选字段，不需要就填空
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TencentWeCharEntity">
+            <summary>
+            tencent 微信对接实体类 TencentToken
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentWeCharEntity.grant_type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentWeCharEntity.appid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentWeCharEntity.secret">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentWeCharEntity.url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TencentTokens">
+            <summary>
+            Tencent Token
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentTokens.access_token">
+            <summary>
+            TokenCode
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentTokens.expires_in">
+            <summary>
+            有效期
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.WechaIP">
+            <summary>
+            获取微信IP
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WechaIP.ip_list">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TencentFocusALLUser">
+            <summary>
+            Tencent关注者
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusALLUser.total">
+            <summary>
+            total
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusALLUser.count">
+            <summary>
+            有效期
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusALLUser.data">
+            <summary>
+            openid数据集
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusALLUser.next_openid">
+            <summary>
+            获取关注用户列表偏移量
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.data">
+            <summary>
+            数据信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.data.openid">
+            <summary>
+            openid
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TencentUserToken">
+            <summary>
+            用户token
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TencentAppletUserToken">
+            <summary>
+            小程序登陆授权信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentAppletUserToken.openid">
+            <summary>
+            用户唯一标识
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentAppletUserToken.session_key">
+            <summary>
+            会话密钥
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentAppletUserToken.unionid">
+            <summary>
+            用户在开放平台的唯一标识符
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TencentFocusUser">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.subscribe">
+            <summary>
+            用户是否订阅该公众号标识，值为0时，代表此用户没有关注该公众号，拉取不到其余信息。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.openid">
+            <summary>
+            用户的标识，对当前公众号唯一
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.nickname">
+            <summary>
+            用户的昵称       
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.sex">
+            <summary>
+            用户的性别，值为1时是男性，值为2时是女性，值为0时是未知
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.city">
+            <summary>
+            用户所在城市
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.country">
+            <summary>
+            用户所在国家
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.province">
+            <summary>
+            用户所在省份
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.language">
+            <summary>
+            用户的语言，简体中文为zh_CN
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.headimgurl">
+            <summary>
+            用户头像，最后一个数值代表正方形头像大小（有0、46、64、96、132数值可选，0代表640*640正方形头像），用户没有头像时该项为空。若用户更换头像，原有头像URL将失效。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.subscribe_time">
+            <summary>
+            用户关注时间，为时间戳。如果用户曾多次关注，则取最后关注时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.unionid">
+            <summary>
+            只有在用户将公众号绑定到微信开放平台帐号后，才会出现该字段。
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.remark">
+            <summary>
+            公众号运营者对粉丝的备注，公众号运营者可在微信公众平台用户管理界面对粉丝添加备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.groupid">
+            <summary>
+            用户所在的分组ID（暂时兼容用户分组旧接口）
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.tagid_list">
+            <summary>
+            用户被打上的标签ID列表
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.subscribe_scene">
+            <summary>
+            返回用户关注的渠道来源，ADD_SCENE_SEARCH 公众号搜索，ADD_SCENE_ACCOUNT_MIGRATION 公众号迁移，ADD_SCENE_PROFILE_CARD 名片分享，ADD_SCENE_QR_CODE 扫描二维码，ADD_SCENEPROFILE LINK 图文页内名称点击，ADD_SCENE_PROFILE_ITEM 图文页右上角菜单，ADD_SCENE_PAID 支付后关注，ADD_SCENE_OTHERS 其他
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.qr_scene">
+            <summary>
+            二维码扫码场景（开发者自定义）
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TencentFocusUser.qr_scene_str">
+            <summary>
+            二维码扫码场景描述（开发者自定义）
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.Tags">
+            <summary>
+            标签列表
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Tags.tags">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.Tag">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.Tag.count">
+            <summary>
+            此标签下粉丝数
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.BatchtaggingTag">
+            <summary>
+            给用户批量打标签
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.Tagidlist">
+            <summary>
+            用户身上的标签列表
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TencentTagUsers">
+            <summary>
+            标签下用户信息
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.SendNewsMessageArticlesModel">
+            <summary>
+            发送图文
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TemplateItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateItems.template_list">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TemplateInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateInfo.template_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateInfo.title">
+            <summary>
+            订阅模板消息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateInfo.primary_industry">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateInfo.deputy_industry">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateInfo.content">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateInfo.example">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.SendTemplate">
+            <summary>
+            发送模板
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.TemplateCode">
+            <summary>
+            模板编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.ToUser">
+            <summary>
+            接收者openid
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.TemplateId">
+            <summary>
+            微信模板ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.BackUrl">
+            <summary>
+            模板跳转链接
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.Appid">
+            <summary>
+            所需跳转到的小程序appid（该小程序appid必须与发模板消息的公众号是绑定关联关系，暂不支持小游戏）
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.Pagepath">
+            <summary>
+            所需跳转到小程序的具体页面路径，支持带参数,（示例index?foo=bar），暂不支持小游戏
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.FirstMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.Keyword1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.Keyword2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.Keyword3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.Keyword4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.Keyword5">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.MessageRemark">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.SMSMessage">
+            <summary>
+            短信提醒 
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendTemplate.MessageType">
+            <summary>
+            短信提醒类型
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.SendMessageInfo">
+            <summary>
+            发送消息类
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageInfo.TemplateCode">
+            <summary>
+            发送模板
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageInfo.OperationType">
+            <summary>
+            发送类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageInfo.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageInfo.MessageRemark">
+            <summary>
+            发送消息内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageInfo.EvaluateLevel">
+            <summary>
+            评分星级  内容格式  5星
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageInfo.Inquiry">
+            <summary>
+            患者追问时间  内容格式  4小时
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageInfo.WarningTime">
+            <summary>
+            预警时间  内容格式为 4小时
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.SendMessageInfo.Platform">
+            <summary>
+            平台
+            </summary>
+        </member>
+        <member name="M:Yaeher.SystemConfig.SendMessageInfo.SetPlatform(System.String)">
+            <summary>
+            设置平台
+            </summary>
+            <param name="platform"></param>
+        </member>
+        <member name="M:Yaeher.SystemConfig.SendMessageInfo.GetPlatform">
+            <summary>
+            获取平台字符
+            </summary>
+            <param name="platform"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yaeher.SystemConfig.TemplateModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateModel.errcode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateModel.errmsg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.TemplateModel.msgid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.UserManager">
+            <summary>
+            用户基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserManager.YaeherUserInfo">
+            <summary>
+            用户基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserManager.YaeherDoctorInfo">
+            <summary>
+            医生基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserManager.RoleList">
+            <summary>
+            用户角色
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserManager.ModuleList">
+            <summary>
+            用户菜单
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserManager.MobileRoleName">
+            <summary>
+            移动端角色
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserManager.IsAdmin">
+            <summary>
+            PC端是否管理员
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserManager.IsDoctor">
+            <summary>
+            PC端是否医生
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserManager.IsCustomerService">
+            <summary>
+            PC端是否客服
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserManager.IsQC">
+            <summary>
+            PC端是否质控
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.UserMemory">
+            <summary>
+            登陆缓存
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserMemory.MobileRoleName">
+            <summary>
+            移动端角色
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserMemory.IsAdmin">
+            <summary>
+            PC端是否管理员
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserMemory.IsDoctor">
+            <summary>
+            PC端是否医生
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserMemory.IsCustomerService">
+            <summary>
+            PC端是否客服
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserMemory.IsQC">
+            <summary>
+            PC端是否质控
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserMemory.WecharOpenID">
+            <summary>
+            微信openid
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.UserMemory.DoctorID">
+            <summary>
+            doctorid
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.YaeherDoctorInfo">
+            <summary>
+            医生基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.YaeherUserInfo">
+            <summary>
+            用户基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.DoctorInfo">
+            <summary>
+            医生基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.DoctorRelationList">
+            <summary>
+            医生与标签关系 
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.ServiceMoneyLists">
+            <summary>
+            医生提供服务
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.YaeherUserPayment">
+            <summary>
+            医生支付方式
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.LableManageList">
+            <summary>
+            标签 疾病类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.InquiryMaxCount">
+            <summary>
+            InquiryMaxCount
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.WxPayBusinessId">
+            <summary>
+            WxPayBusinessId
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.ConsultationSucessTime">
+            <summary>
+            ConsultationSucessTime
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.ReplyMinutesTime">
+            <summary>
+            ReplyMinutesTime
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherDoctorInfo.DoctorOnlineRecord">
+            <summary>
+            医生上下线信息
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.YaeherModuleNode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.ParentId">
+            <summary>
+            ParentId
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.Names">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.LinkUrls">
+            <summary>
+            LinkUrl
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.Areas">
+            <summary>
+            Area
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.Controllers">
+            <summary>
+            Controller
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.Actionss">
+            <summary>
+            Actions
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.Icons">
+            <summary>
+            Icon
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.Codes">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.OrderSort">
+            <summary>
+            OrderSort
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.IsMenu">
+            <summary>
+            是否菜单  当选择不是菜单时  ParentId为0
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.Enabled">
+            <summary>
+            是否激活
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherModuleNode.children">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.WecharSendMessage">
+            <summary>
+            消息发送记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.ConsultantName">
+            <summary>
+            咨询姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.DoctorName">
+            <summary>
+            咨询医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.ToUser">
+            <summary>
+            接收者openid
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.TemplateCode">
+            <summary>
+            模板类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.OperationType">
+            <summary>
+            操作类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.TemplateId">
+            <summary>
+            模板ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.BackUrl">
+            <summary>
+            模板跳转链接
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.Miniprogram">
+            <summary>
+            跳小程序所需数据，不需跳小程序可不用传该数据
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.Appid">
+            <summary>
+            所需跳转到的小程序appid（该小程序appid必须与发模板消息的公众号是绑定关联关系，暂不支持小游戏）
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.Pagepath">
+            <summary>
+            所需跳转到小程序的具体页面路径，支持带参数,（示例index?foo=bar），暂不支持小游戏
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.WecharData">
+            <summary>
+            模板数据
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.MsgType">
+            <summary>
+            消息类型是事件
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.MsgID">
+            <summary>
+            消息id
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.Status">
+            <summary>
+            消息类型是事件
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.FirstMessage">
+            <summary>
+            发送头条
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.MessageRemark">
+            <summary>
+            发送内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.Keyword1">
+            <summary>
+            关键字1
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.Keyword2">
+            <summary>
+            关键字2
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.Keyword3">
+            <summary>
+            关键字3
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.ConsultJson">
+            <summary>
+            咨询类型JSon
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.EvaluationJson">
+            <summary>
+            评价
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.WecharSendMessage.FormId">
+            <summary>
+            表单ID
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.YaeherBanner">
+            <summary>
+            轮播图设置
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherBanner.BannerTypeCode">
+            <summary>
+            轮播图类型Code
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherBanner.BannerTypeName">
+            <summary>
+            轮播图名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherBanner.BannerName">
+            <summary>
+            轮播图名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherBanner.BannerImageUrl">
+            <summary>
+            轮播图 图片上传地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherBanner.BannerUrl">
+            <summary>
+            轮播图 跳转Url
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherBanner.PlayStartTime">
+            <summary>
+            播放开始时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherBanner.PlayEndTime">
+            <summary>
+            播放结束时间
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.YaeherConditionalMenu">
+            <summary>
+            微信个性化菜单
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.RoleCode">
+            <summary>
+            所属角色Code
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.RoleName">
+            <summary>
+            所属角色名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.TagId">
+            <summary>
+             对应微信个性化菜单ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.ConditionalName">
+            <summary>
+            微信菜单显示名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.ConditionalType">
+            <summary>
+            菜单的响应动作类型，view表示网页类型，click表示点击类型，miniprogram表示小程序类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.ConditionalTypeName">
+            <summary>
+            菜单相应动作类型ID,SystemParameter
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.ConditionalUrl">
+            <summary>
+            url地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.AppID">
+            <summary>
+            小程序的appid
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.Pagepath">
+            <summary>
+            小程序的页面路径
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.ParentID">
+            <summary>
+            parentID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.MenuID">
+            <summary>
+            个性化菜单微信ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherConditionalMenu.MiniProgramType">
+            <summary>
+            小程序平台doctor :医生端， patient：患者端
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.YaeherLabelConfig">
+            <summary>
+            标签配置
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherLabelConfig.LabelTypeCode">
+            <summary>
+            标签类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherLabelConfig.LabelTypeName">
+            <summary>
+            类型名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherLabelConfig.LabelCode">
+            <summary>
+            标签编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherLabelConfig.LabelName">
+            <summary>
+            标签名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherLabelConfig.ParentId">
+            <summary>
+            parentID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherLabelConfig.OrderSort">
+            <summary>
+            OrderSort
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.YaeherMessageTemplate">
+            <summary>
+            微信消息模板
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherMessageTemplate.TemplateCode">
+            <summary>
+            模板类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherMessageTemplate.Title">
+            <summary>
+            模板类型名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherMessageTemplate.WecharTitle">
+            <summary>
+            微信模板名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherMessageTemplate.TemplateId">
+            <summary>
+            微信模板编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherMessageTemplate.Content">
+            <summary>
+            模板内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherMessageTemplate.Example">
+            <summary>
+            模板示例
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherMessageTemplate.AppletTempLateId">
+            <summary>
+            小程序 消息模板id 手动配置
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.YaeherPhone">
+            <summary>
+            拨打电话记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherPhone.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherPhone.UserName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherPhone.Caller">
+            <summary>
+            主叫电话
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherPhone.Callee">
+            <summary>
+            被叫电话
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherPhone.CallCenterNumber">
+            <summary>
+            呼叫中心电话 预留扩展
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherPhone.StatusCode">
+            <summary>
+            呼叫状态
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemConfig.YaeherSendMsm">
+            <summary>
+            对接阿里短信实体
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherSendMsm.PhoneNumbers">
+            <summary>
+            短信接收号码,支持以逗号分隔的形式进行批量调用，批量上限为1000个手机号码,
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherSendMsm.SignName">
+            <summary>
+            短信签名
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherSendMsm.TemplateCode">
+            <summary>
+            短信模板ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherSendMsm.TemplateParam">
+            <summary>
+            短信模板变量替换JSON串,
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherSendMsm.SmsUpExtendCode">
+            <summary>
+            上行短信扩展码,无特殊需要此字段的用户请忽略此字段
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherSendMsm.OutId">
+            <summary>
+            外部流水扩展字段
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemConfig.YaeherSendMsm.MessageType">
+            <summary>
+            短信模板类型
+            </summary>
+        </member>
+        <member name="T:Yaeher.AreaManage">
+            <summary>
+            地区维护
+            </summary>
+        </member>
+        <member name="P:Yaeher.AreaManage.Code">
+            <summary>
+            地区编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.AreaManage.Name">
+            <summary>
+            地区名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.AreaManage.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.AreaManage.Postcode">
+            <summary>
+            邮编
+            </summary>
+        </member>
+        <member name="T:Yaeher.ArticleOperList">
+            <summary>
+            文章操作日志表
+            </summary>
+        </member>
+        <member name="P:Yaeher.ArticleOperList.ArticleID">
+            <summary>
+            文章或者问答ID 
+            </summary>
+        </member>
+        <member name="P:Yaeher.ArticleOperList.OperType">
+            <summary> 
+            操作类型  阅读 点赞 转发 收藏 等操作类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.ArticleOperList.Type">
+            <summary>
+            类型 
+            </summary>
+        </member>
+        <member name="T:Yaeher.AttachmentService">
+            <summary>
+            附件表
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.ServiceID">
+            <summary>
+            业务ID  回答ID 追问的ID 或者其他附件ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.ConsultID">
+            <summary>
+            咨询ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.ServiceNumber">
+            <summary>
+            业务number  回答number 追问的number 或者其他附件number
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.FileFrom">
+            <summary>
+            文件来源 咨询 回答 追问
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.ConsultJSon">
+            <summary>
+            咨询JSon
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.FileType">
+            <summary>
+            文件类型  视频 图片
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.Filename">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.TypeDetail">
+            <summary>
+            正面，反面，执业证，资格证
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.FileAddress">
+            <summary>
+            文件地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.FileOrder">
+            <summary>
+            文件排序
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.FileSize">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.FileContentAddress">
+            <summary>
+            文件缩略地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.AttachmentService.FileTotalTime">
+            <summary>
+            音频文件时长
+            </summary>
+        </member>
+        <member name="T:Yaeher.ClinicDoctorReltion">
+            <summary>
+            门诊与医生关系
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicDoctorReltion.ClinicID">
+            <summary>
+            门诊ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicDoctorReltion.ClinicName">
+            <summary>
+            门诊名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicDoctorReltion.ClinicJSON">
+            <summary>
+            门诊JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicDoctorReltion.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicDoctorReltion.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicDoctorReltion.DoctorJSON">
+            <summary>
+            医生JSON
+            </summary>
+        </member>
+        <member name="T:Yaeher.ClinicInfomation">
+            <summary>
+            科室信息维护 
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicInfomation.ClinicName">
+            <summary>
+            门诊名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicInfomation.ClinicIntro">
+            <summary>
+            门诊说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicInfomation.ClinicDirector">
+            <summary>
+            门诊负责人  用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicInfomation.ClinicType">
+            <summary>
+            1成人,2儿童,默认成人
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicInfomation.OrderSort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:Yaeher.ClinicLableReltion">
+            <summary>
+            科室与标签的关系
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicLableReltion.ClinicID">
+            <summary>
+            科室ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicLableReltion.ClinicName">
+            <summary>
+            科室名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicLableReltion.ClinicJSON">
+            <summary>
+            科室JSon
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicLableReltion.LableID">
+            <summary>
+            标签ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicLableReltion.LableName">
+            <summary>
+            标签名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.ClinicLableReltion.LableJSON">
+            <summary>
+            标签JSon
+            </summary>
+        </member>
+        <member name="T:Yaeher.CorporateIncomeDetails">
+            <summary>
+            公司收入明细
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.ConsultNumber">
+            <summary>
+            咨询单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.ConsultID">
+            <summary>
+            咨询ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.ConsultantID">
+            <summary>
+            咨询用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.ConsultantName">
+            <summary>
+            咨询用户
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.PatientID">
+            <summary>
+            患者ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.PatientName">
+            <summary>
+            患者名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.DoctorID">
+            <summary>
+            咨询医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.DoctorName">
+            <summary>
+            医生名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.OrderNumber">
+            <summary>
+            订单单号
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.OrderCurrency">
+            <summary>
+            订单币别
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.OrderMoney">
+            <summary>
+            订单金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeDetails.ProportionMoney">
+            <summary>
+            分成金额
+            </summary>
+        </member>
+        <member name="T:Yaeher.CorporateIncomeTotal">
+            <summary>
+            公司收入统计表
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeTotal.IncomeType">
+            <summary>
+            收入时间类型  年 月 季 天
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeTotal.IncomeTotal">
+            <summary>
+            统计金额，公司进账
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeTotal.OrderTotalMoney">
+            <summary>
+            订单总金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeTotal.RefundTotalMoney">
+            <summary>
+            退单总金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeTotal.OrderTotal">
+            <summary>
+            订单数（分账的订单数）
+            </summary>
+        </member>
+        <member name="P:Yaeher.CorporateIncomeTotal.TotalDate">
+            <summary>
+            统计时间
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorCheck">
+            <summary>
+            医生审核
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorCheck.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorCheck.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorCheck.DoctorJSon">
+            <summary>
+            医生JSon
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorCheck.CheckType">
+            <summary>
+            审核类型  基础审核  认证审核
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorCheck.CheckState">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorCheck.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorCheck.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorCheck.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorOnlineRecord">
+            <summary>
+            医生上下线设置记录
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.DoctorName">
+            <summary>
+            医生名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.DoctorJSON">
+            <summary>
+            医生JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.OnlineState">
+            <summary>
+            上下线状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.DivideInto">
+            <summary>
+            分成设置
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.DoctorMoneyExchange">
+            <summary>
+              医生资费调价幅度百分比(%)
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.DoctorMoneyexTime">
+            <summary>
+            医生资费调价时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.IncomeDay">
+            <summary>
+            收入时间设置
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.Remark">
+            <summary>
+            备注说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.CheckState">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineRecord.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorOnlineSetLog">
+            <summary>
+            医生上下线设置记录log
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.DoctorName">
+            <summary>
+            医生名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.DoctorJSON">
+            <summary>
+            医生JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.OnlineState">
+            <summary>
+            上下线状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.DivideInto">
+            <summary>
+            分成设置
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.DoctorMoneyExchange">
+            <summary>
+              医生资费调价幅度百分比(%)
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.DoctorMoneyexTime">
+            <summary>
+            医生资费调价时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.IncomeDay">
+            <summary>
+            收入时间设置
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.Remark">
+            <summary>
+            备注说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.CheckState">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorOnlineSetLog.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorParaSet">
+            医生参数信息设置 
+        </member>
+        <member name="P:Yaeher.DoctorParaSet.DoctorParaSetCode">
+            <summary>
+            参数code
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorParaSet.DoctorParaSetName">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorParaSet.ItemValue">
+            <summary>
+            参数值
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorRules">
+            <summary>
+            医生规则制度 
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRules.RulesType">
+            <summary>
+            规则类型  规则类型 指南 规则 制度 评分规则 等类型
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRules.RulesTitle">
+            <summary>
+            规则标题
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRules.RulesContent">
+            <summary>
+            规则内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRules.ApplyClinicName">
+            <summary>
+            适用门诊名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRules.ApplyClinicID">
+            <summary>
+            适用门诊ID  
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorRules.ImageFie">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="T:Yaeher.DoctorWithdrawRecord">
+            <summary>
+            医生提现记录表
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.SequenceNo">
+            <summary>
+            提现流水号
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.DoctorJSON">
+            <summary>
+            医生JSON
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.WithdrawMoney">
+            <summary>
+            提现金额
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.WithdrawTime">
+            <summary>
+            提现时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.CheckState">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:Yaeher.DoctorWithdrawRecord.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="T:Yaeher.InterfaceSet">
+            <summary>
+            对接接口设置 
+            </summary>
+        </member>
+        <member name="P:Yaeher.InterfaceSet.InterfaceName">
+            <summary>
+            对接端口名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.InterfaceSet.InterfaceIntro">
+            <summary>
+            对接端口说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.InterfaceSet.InterfaceAddress">
+            <summary>
+            对接端口地址
+            </summary>
+        </member>
+        <member name="T:Yaeher.LableManage">
+            <summary>
+            标签管理 
+            </summary>
+        </member>
+        <member name="P:Yaeher.LableManage.LableName">
+            <summary>
+            标签名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.LableManage.LableRemark">
+            <summary>
+            标签说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.LableManage.OrderSort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:Yaeher.QualityCommittee">
+            <summary>
+            质控委员
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommittee.ClinicName">
+            <summary>
+            门诊名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommittee.ClinicID">
+            <summary>
+            门诊ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommittee.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommittee.DoctorName">
+            <summary>
+            医生名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommittee.Accomplish">
+            <summary>
+            擅长
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommittee.QualityState">
+            <summary>
+            状态  启用 停用
+            </summary>
+        </member>
+        <member name="T:Yaeher.QualityCommitteeRegister">
+            <summary>
+            注册质控
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.ClinicName">
+            <summary>
+            门诊名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.ClinicID">
+            <summary>
+            门诊ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.DoctorName">
+            <summary>
+            医生名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.Accomplish">
+            <summary>
+            擅长
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.ApplyRemark">
+            <summary>
+            申请理由
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.ApplyState">
+            <summary>
+            申请类型    申请质控 申请停用质控
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.CheckState">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.QualityCommitteeRegister.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="T:Yaeher.QuestionRelease">
+            <summary>
+            问答发布
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.DescriptionTiltle">
+            <summary>
+            问题描述
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.Answer">
+            <summary>
+            问题回答
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.TitleDetail">
+            <summary>
+            标题详情
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.DoctorId">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.ReadTotal">
+            <summary>
+            阅读量
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.UpvoteTotal">
+            <summary>
+            点赞次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.TransTotal">
+            <summary>
+            转发次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.CollectTotal">
+            <summary>
+            收藏次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.CheckState">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:Yaeher.QuestionRelease.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="T:Yaeher.ReleaseManage">
+            <summary>
+            发布文章
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.PaperTiltle">
+            <summary>
+            文章标题
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.PaperContent">
+            <summary>
+            文章内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.PaperAddress">
+            <summary>
+            文章附件地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.PaperFrom">
+            <summary>
+            文章来源   公司 医生  个人 或者案例
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.DoctorID">
+            <summary>
+            医生ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.DoctorName">
+            <summary>
+            医生姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.ConsultNumber">
+            <summary>
+            案例编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.CheckState">
+            <summary>
+            审核状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.CheckRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.CheckTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.Checker">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.ReadTotal">
+            <summary>
+            阅读次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.UpvoteTotal">
+            <summary>
+            点赞次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.TransTotal">
+            <summary>
+            转发次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.CollectTotal">
+            <summary>
+            收藏次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.ImageFie">
+            <summary>
+            文章图片
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.DoctorPaperID">
+             <summary>
+            医生文章ID
+             </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.MediaId">
+            <summary>
+            微信素材Id
+            </summary>
+        </member>
+        <member name="P:Yaeher.ReleaseManage.Channel">
+            <summary>
+            已发布渠道（微信公众号）
+            </summary>
+        </member>
+        <member name="T:Yaeher.SystemParameter">
+            <summary>
+            系统参数设置
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemParameter.SystemType">
+            <summary>
+            参数类别
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemParameter.SystemCode">
+            <summary>
+            参数类别Code
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemParameter.Code">
+            <summary>
+            参数编号
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemParameter.Name">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemParameter.ItemValue">
+            <summary>
+            项目参数值
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemParameter.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.SystemParameter.Parameter">
+            <summary>
+            c
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherMessageRemind">
+            <summary>
+            短信发送记录表
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherMessageRemind.UserID">
+            <summary>
+            接收用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherMessageRemind.UserName">
+            <summary>
+            接收用户姓名
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherMessageRemind.PhoneNumber">
+            <summary>
+            接收用户手机号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherMessageRemind.MessageType">
+            <summary>
+            短信类型  注册 认证 咨询提醒  咨询退单系统  
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherMessageRemind.Message">
+            <summary>
+            短信内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherMessageRemind.VerificationCode">
+            <summary>
+            短信验证码
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherMessageRemind.EffectiveLength">
+            <summary>
+            有效时长
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherMessageRemind.EffectiveTime">
+            <summary>
+            有效期
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherModule">
+            <summary>
+            菜单表
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.ParentId">
+            <summary>
+            ParentId
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.Names">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.LinkUrls">
+            <summary>
+            LinkUrl
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.Areas">
+            <summary>
+            Area
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.Controllers">
+            <summary>
+            Controller
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.Actionss">
+            <summary>
+            Actions
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.Icons">
+            <summary>
+            Icon
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.Codes">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.OrderSort">
+            <summary>
+            OrderSort
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.Description">
+            <summary>
+            登陆名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.IsMenu">
+            <summary>
+            是否菜单  当选择不是菜单时  ParentId为0
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherModule.Enabled">
+            <summary>
+            是否激活
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherOperList">
+            <summary>
+            操作日志表
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherOperList.OperExplain">
+            <summary>
+            操作说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherOperList.OperContent">
+            <summary>
+            操作内容
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherOperList.OperType">
+            <summary>
+            操作类型
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherRole">
+            <summary>
+            角色表 
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherRole.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherRole.RoleCode">
+            <summary>
+            角色Code
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherRole.Description">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherRole.Enabled">
+            <summary>
+            激活状态
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherRole.IsAdmin">
+            <summary>
+            是否管理员
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherRoleModule">
+            <summary>
+            角色与菜单关系表
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherRoleModule.RoleId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherRoleModule.ModuleId">
+            <summary>
+            菜单ID
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherUser">
+            <summary>
+            用户基础表
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.LoginName">
+            <summary>
+            登陆名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.LoginPwd">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.FullName">
+            <summary>
+            用户全称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.PhoneNumber">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.Email">
+            <summary>
+            邮箱地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.IDCard">
+            <summary>
+            用户身份证号码
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.Sex">
+            <summary>
+            性别 1,男，2，女
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.Birthday">
+            <summary>
+            生日
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.Enabled">
+            <summary>
+            是否激活
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.ErrorCount">
+            <summary>
+            登陆错误次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.LoginCount">
+            <summary>
+            登陆次数
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.Userorigin">
+            <summary>
+            用户来源
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.WecharNo">
+            <summary>
+            关联微信号
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.WecharName">
+            <summary>
+            微信昵称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.WecharOpenID">
+            <summary>
+            微信openID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.UserImage">
+            <summary>
+            图像地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.RoleName">
+            <summary>
+            角色说明
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.WecharLable">
+            <summary>
+            微信个性话标签  存中文名称
+            </summary> 
+        </member>
+        <member name="P:Yaeher.YaeherUser.WecharLableId">
+            <summary>
+            微信个性话标签ID
+            </summary> 
+        </member>
+        <member name="P:Yaeher.YaeherUser.WeCharUserJson">
+            <summary>
+            用户微信基本信息
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.OpenID">
+            <summary>
+            用户OpenID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.WecharUnionID">
+            <summary>
+            用户微信UnionID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.AppletOpenID">
+            <summary>
+            小程序OpenId
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.CAppletOpenID">
+            <summary>
+            C端小程序OpenId
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.IsLabel">
+            <summary>
+            是否已经打过微信的标签
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.IsPay">
+            <summary>
+            是否存在支付方式
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.IsUpdate">
+            <summary>
+            是否已经更新OpenID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUser.IsProfitSharing">
+            <summary>
+            是否生成分账账号
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherUserPayment">
+            <summary>
+            用户支付表
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.UserID">
+            <summary>
+            UserID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.FullName">
+            <summary>
+            用户全称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.PayMethod">
+            <summary>
+            支付方式
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.PayMethodName">
+            <summary>
+            支付名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.PaymentAccout">
+            <summary>
+            支付账号
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.BankName">
+            <summary>
+            开户行名称
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.Subbranch">
+            <summary>
+            开户行支行
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.BandAdd">
+            <summary>
+            开户行地址
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.BankNo">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserPayment.IsDefault">
+            <summary>
+            是否默认账号 
+            </summary>
+        </member>
+        <member name="T:Yaeher.YaeherUserRole">
+            <summary>
+            角色与用户关联表
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserRole.RoleID">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.YaeherUserRole.UserID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Yaeher.Timing.AppTimes.StartupTime">
+            <summary>
+            Gets the startup time of the application.
+            </summary>
+        </member>
+        <member name="T:Yaeher.Web.WebContentDirectoryFinder">
+            <summary>
+            This class is used to find root path of the web project in;
+            unit tests (to find views) and entity framework core command line commands (to find conn string).
+            </summary>
+        </member>
+    </members>
+</doc>
